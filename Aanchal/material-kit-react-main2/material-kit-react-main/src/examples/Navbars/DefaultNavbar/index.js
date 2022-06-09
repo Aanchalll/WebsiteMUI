@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 /**
 =========================================================
-* Material Kit 2 React - v2.0.0
+* FREE DOWNLOAD React - v2.0.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react

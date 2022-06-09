@@ -42,7 +42,7 @@ import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
-import bgImage from "assets/images/shapes/waves-white.svg";
+// import bgImage from "assets/images/shapes/waves-white.svg";
 // Images
 // import bgImage from "assets/images/abc.jpg";
 
@@ -64,7 +64,7 @@ function Presentation() {
         width="100%"
         sx={{
           // backgroundImage: `url(${bgImage})`,
-          // backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.5),
+          // backgroundColor: ({ palette: { black }, functions: { rgba } }) => rgba(black.main, 0.5),
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
@@ -73,7 +73,7 @@ function Presentation() {
       >
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
+            {/* <MKTypography
               variant="h1"
               color="white"
               mt={-6}
@@ -85,7 +85,11 @@ function Presentation() {
               })}
             >
               Material Kit 2 React{" "}
-            </MKTypography>
+            </MKTypography> */}
+            <div className="radial-gradient">
+              {/* <h1 className="text-glow">Is this Okay ? </h1> */}
+              <h1 className="t2">Arpan Decores</h1>
+            </div>
             <div id="clouds">
               <div className="cloud x4" />
 
@@ -120,9 +124,12 @@ function Presentation() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
-          backgroundColor: ({ palette: { black }, functions: { rgba } }) => rgba(black.main, 0.5),
+          backgroundColor: "silver",
           backdropFilter: "saturate(200%) blur(30px)",
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+          // boxShadow: ({ boxShadows: { xxl } }) => xxl,
+          boxShadow:
+            "0 0 2px #fff, 0 0 3px silver, 0 0 4px silver, 0 0 5px silver, 0 0 6px silver, 0 0 7px silver, 0 0 8px silver",
+          opacity: "0.7",
         }}
       >
         <Counters />
