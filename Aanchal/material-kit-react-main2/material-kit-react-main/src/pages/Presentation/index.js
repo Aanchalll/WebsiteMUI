@@ -16,32 +16,34 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
+// import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+// import MKTypography from "components/MKTypography";
+// import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+// import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+// import Counters from "pages/Presentation/sections/Counters";
+// import Information from "pages/Presentation/sections/Information";
+// import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+// import Pages from "pages/Presentation/sections/Pages";
+// import Testimonials from "pages/Presentation/sections/Testimonials";
+// import Download from "pages/Presentation/sections/Download";
 
-// Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// // Presentation page components
+// import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
+// import MasonryImageList from "components/ImagesMasonary";
+import OwlCarouselComponent from "components/OwlCarouselComponent";
 // import bgImage from "assets/images/shapes/waves-white.svg";
 // Images
 // import bgImage from "assets/images/abc.jpg";
@@ -67,6 +69,7 @@ function Presentation() {
           // backgroundColor: ({ palette: { black }, functions: { rgba } }) => rgba(black.main, 0.5),
           backgroundSize: "cover",
           backgroundPosition: "top",
+          position: "fixed",
           display: "grid",
           placeItems: "center",
         }}
@@ -86,9 +89,25 @@ function Presentation() {
             >
               Material Kit 2 React{" "}
             </MKTypography> */}
+            {/* <Card
+              sx={{
+                p: 2,
+                // mx: { xs: 2, lg: 3 },
+                // mt: -8,
+                // mb: 4,
+                width: "100%",
+                backgroundColor: "#5d5d64",
+                backdropFilter: "saturate(200%) blur(30px)",
+                // boxShadow: ({ boxShadows: { xxl } }) => xxl,
+                boxShadow:
+                  "0 0 2px #fff, 0 0 3px silver, 0 0 4px silver, 0 0 5px silver, 0 0 6px silver, 0 0 7px silver, 0 0 8px silver",
+                opacity: "0.8",
+              }}
+            > */}
             <div className="radial-gradient">
               {/* <h1 className="text-glow">Is this Okay ? </h1> */}
-              <h1 className="t2">Arpan Decores</h1>
+              <h1 className="t2">Aanchal Sahu</h1>
+              <h5 className="t3">We convert your thoughts into reality!</h5>
             </div>
             <div id="clouds">
               <div className="cloud x4" />
@@ -104,21 +123,41 @@ function Presentation() {
               <div className="cloud x3" />
               <div className="cloud x1" />
             </div>
-            <MKTypography
+            {/* <MKTypography
               variant="body1"
-              color="white"
+              // color="white"
+              // color="#000"
+              sx={{
+                textShadow:
+                  "0 0 1px #fff, 0 0 3px silver, 0 0 2px silver, 0 0 3px silver, 0 0 4px silver, 0 0 5px silver, 0 0 6px silver",
+              }}
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
-            </MKTypography>
+              <span className="wrapper">
+                <span className="neon-wrapper">
+                  <span className="txt">
+                    {/* ne🙃n 
+                    Aanchal
+                  </span>
+                  <span className="gradient" />
+                  <span className="dodge" />
+                </span>
+              </span>
+
+              {/* Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million developers around the world. 
+            </MKTypography> */}
             {/* <div className="squares square2" /> */}
+            {/* </Card> */}
           </Grid>
         </Container>
       </MKBox>
-      <Card
+      <OwlCarouselComponent />
+      <OwlCarouselComponent />
+
+      {/* <MasonryImageList /> */}
+      {/* <Card
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
@@ -237,7 +276,21 @@ function Presentation() {
             </Grid>
           </Container>
         </MKBox>
-      </Card>
+      </Card> */}
+      {/* <div id="clouds">
+        <div className="cloud x4" />
+
+        <div className="cloud x5" />
+        <div className="cloud x1" />
+        <div className="cloud x2" />
+        <div className="cloud x3" />
+        <div className="cloud x5" />
+        <div className="cloud x4" />
+
+        <div className="cloud x2" />
+        <div className="cloud x3" />
+        <div className="cloud x1" />
+      </div> */}
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
